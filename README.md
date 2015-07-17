@@ -1,6 +1,6 @@
 # payplans-override-bootstrap3
 PayPlans Overrides for BootStrap3
-This source code allows you to use PayPlans (Joomla Membership Software) with any Bootstrap 3 template of Joomla. This override is built with default Bootstrap3. You may need to do some customization your own, if it doesn't match with your template's design.
+This source code allows you to use PayPlans (Joomla Membership Software) with any Bootstrap 3 template of Joomla. This override is built with default Bootstrap3. You may need to do some customization, if it doesn't match with your template's design.
 
 Instructions :
 
