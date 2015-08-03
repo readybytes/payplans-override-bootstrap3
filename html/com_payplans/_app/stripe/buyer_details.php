@@ -134,7 +134,7 @@ function stripeResponseHandler(status, response) {
 					$select .= "<option value=".$year;
 					$select .= ">$year</option>\n";
 				}
-				$select .= '</select></div></div></div></div>';
+				$select .= '</select></div></div></div>';
 
 				echo $select;
 
