@@ -8,10 +8,17 @@
 */
 if(defined('_JEXEC')===false) die();?>
 
-<div class="pp-plan <?php echo $plan_grid_class;?> <?php echo $plan->getCssClasses(); ?> ">
-	<span class="pp-badge"> </span>
-	
-	<div class="pp-plan-details text-center">
+<div class="pp-plan <?php echo $plan_grid_class;?> <?php echo $plan->getPlanHighlighter()?'popular' : '' ?>">
+	 <div class="pp-plan-details center">
+<?php if ($plan->getBadgeVisible() !=false) :?>
+	<div>
+ 			<div class="<?php echo $plan->getBadgePosition();?> "> 
+		         <div class="pp-badges" style="background :<?php echo $plan->getBadgeBackgroundColor();?>;color :<?php echo $plan->getBadgeTitleColor();?>;border-color :<?php echo $plan->getBadgeBackgroundColor();?>">
+			    	<?php echo JString::ucfirst($plan->getBadgeTitle());?>
+				</div>	   
+			</div>
+	</div>		
+<?php endif;?>
 		<div class="pp-plan-border">
 		<!-- =========================================
 			Basic Detail section (Plan name and pricing)

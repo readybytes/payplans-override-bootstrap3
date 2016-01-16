@@ -104,6 +104,141 @@
 	display: block;
 }
 
+/*---------------------------------------------------------
+	Plan badges- Top Right Position
+---------------------------------------------------------*/
+.top-right {
+   position: absolute!important;
+   letter-spacing: 1px;
+   top: -7px;
+   right: 7px;
+   overflow: hidden;
+   width: 96px;
+   height: 94px;
+   border-bottom-left-radius: 92px;
+}
+
+.top-right .pp-badges {
+   text-align: center;
+   font-weight: bold;
+   top: 24px;
+   right: 13px;
+   width: 135px;
+   padding: 3px;
+   position: relative;
+   -webkit-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   transform: rotate(45deg);
+   border: 1px solid transparent;
+   -webkit-box-shadow: 10px 5px 11px rgba(0, 0, 0, 0.25);
+   -moz-box-shadow: 10px 5px 11px rgba(0, 0, 0, 0.25);
+   -o-box-shadow: 10px 5px 11px rgba(0, 0, 0, 0.25);
+   box-shadow: 10px 5px 11px rgba(0, 0, 0, 0.25);
+}
+
+.top-right .pp-badges:after, .top-right .pp-badges:before {
+   content: "";
+   border-top: 5px solid transparent;
+   border-right: 5px solid;
+   border-right-color: inherit;
+   border-left: 5px solid transparent;
+   border-bottom: 5px solid;
+   border-bottom-color: inherit;
+   position: absolute;
+   top: 23px;
+   -webkit-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   transform: rotate(45deg);
+}
+
+.top-right .pp-badges:before {
+   right: 2px;
+   border-top: 2px solid transparent;
+}
+
+.top-right .pp-badges:after {
+   border-bottom: 3px solid transparent;
+   left: 1px;
+}
+
+/*---------------------------------------------------------
+	Plan badges- Top Left Position
+---------------------------------------------------------*/
+.top-left {
+   position: absolute!important;
+   letter-spacing: 1px;
+   top: -10px;
+   left: 7px;
+   overflow: hidden;
+   width: 96px;
+   height: 94px;
+   border-bottom-right-radius: 92px;
+}
+
+.top-left .pp-badges {
+   text-align: center;
+   font-weight: bold;
+   top: 24px;
+   left: -31px;
+   width: 135px;
+   padding: 3px;
+   position: relative;
+   -webkit-transform: rotate(-45deg);
+   -ms-transform: rotate(-45deg);
+   transform: rotate(-45deg);
+   border: 1px solid transparent;
+   -webkit-box-shadow: 10px 5px 11px rgba(0, 0, 0, 0.25);
+   -moz-box-shadow: 10px 5px 11px rgba(0, 0, 0, 0.25);
+   -o-box-shadow: 10px 5px 11px rgba(0, 0, 0, 0.25);
+    box-shadow: 10px 5px 11px rgba(0, 0, 0, 0.25);
+}
+
+.top-left .pp-badges:after, .top-left .pp-badges:before {
+   content: "";
+   border-top: 5px solid transparent;
+   border-left: 5px solid;
+   border-left-color: inherit;
+   border-right: 5px solid transparent;
+   border-bottom: 5px solid;
+   border-bottom-color: inherit;
+   position: absolute;
+   top: 17px;
+   -webkit-transform: rotate(-45deg);
+   -ms-transform: rotate(-45deg);
+   transform: rotate(-45deg);
+}
+
+.top-left .pp-badges:before {
+   left: -4px;
+   border-left: 8px solid transparent;
+}
+.top-left .pp-badges:after {
+  right: -1px;
+   border-bottom: 14px solid transparent;
+}
+
+.popular .top-left {
+   top: -10px;
+   left: -10px;
+}
+.popular .top-right {
+   top: -10px;
+   right: -10px;
+}
+/*---------------------------------------------------------
+	Plan badges- Top Center Position
+---------------------------------------------------------*/
+.top-center {
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 200%;
+	font-weight: bold;
+	-webkit-box-shadow: 0px 5px 11px rgba(0, 0, 0, 0.25);
+   	-moz-box-shadow: 0px 5px 11px rgba(0, 0, 0, 0.25);
+   	-o-box-shadow: 0px 5px 11px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 5px 11px rgba(0, 0, 0, 0.25);
+}
+
 /*---------------------------------------------------
 	Common CSS tips & Tricks 
 ---------------------------------------------------- */	

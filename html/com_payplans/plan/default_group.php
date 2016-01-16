@@ -7,10 +7,17 @@
 * @contact 		shyam@readybytes.in
 */
 if(defined('_JEXEC')===false) die();?>
-
-<div class="pp-plan <?php echo $plan_grid_class; ?> <?php echo $group->getCssClasses(); ?>">
-	<span class="pp-badge"> </span>
-	<div class="pp-plan-details text-center">
+div class="pp-plan <?php echo $plan_grid_class;?> <?php echo $group->getPlanHighlighter()?'popular' : '' ?>">
+	 <div class="pp-plan-details center">
+<?php if ($group->getBadgeVisible() !=false) :?>
+	<div>
+ 			<div class="<?php echo $group->getBadgePosition();?> "> 
+		         <div class="pp-badges" style="background :<?php echo $group->getBadgeBackgroundColor();?>;color :<?php echo $group->getBadgeTitleColor();?>;border-color :<?php echo $group->getBadgeBackgroundColor();?>">
+			    	<?php echo JString::ucfirst($group->getBadgeTitle());?>
+				</div>	   
+			</div>
+	</div>		
+<?php endif;?>
 		<div class="pp-plan-border">
 			<div class="pp-plan-basic">
 					<div class="pp-plan-price">
