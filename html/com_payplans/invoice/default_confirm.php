@@ -40,8 +40,8 @@ $recurring  = $invoice->isRecurring();
 	<!-- User Header -->
 	<div class="row">	
 		<div class="col-sm-6">
-			<div><h6><?php echo $user->getRealname(); ?></h6></div>
-			<div class="pp-gap-top10"><?php echo $user->getEmail(); ?></div>
+		<div><h6><?php if($user->getRealname() != 'Not_Registered') : ?></h6></div>
+			<div class="pp-gap-top10"><?php echo $user->getEmail(); endif; ?></div>
 			<div class="pp-gap-top10">#<?php echo $invoice->getKey();?></div>
 		</div>
 		
