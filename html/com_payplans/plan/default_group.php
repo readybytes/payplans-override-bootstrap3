@@ -1,14 +1,14 @@
 <?php
 /**
-* @copyright	Copyright (C) 2009 - 2009 Ready Bytes Software Labs Pvt. Ltd. All rights reserved.
+* @copyright	Copyright (C) 2009 - 2016 Ready Bytes Software Labs Pvt. Ltd. All rights reserved.
 * @license		GNU/GPL, see LICENSE.php
 * @package		PayPlans
-* @subpackage	Frontend
-* @contact 		shyam@readybytes.in
+* @subpackage		Frontend
+* @contact 		support+payplans@readybytes.in
 */
 if(defined('_JEXEC')===false) die();?>
-div class="pp-plan <?php echo $plan_grid_class;?> <?php echo $group->getPlanHighlighter()?'popular' : '' ?>">
-	 <div class="pp-plan-details center">
+<div class="pp-plan <?php echo $plan_grid_class;?> <?php echo $group->getPlanHighlighter()?'popular' : '' ?>">
+	 <div class="pp-plan-details text-center">
 <?php if ($group->getBadgeVisible() !=false) :?>
 	<div>
  			<div class="<?php echo $group->getBadgePosition();?> "> 
